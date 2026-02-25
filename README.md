@@ -23,10 +23,15 @@ This project is still in beta. The full system is not complete yet.
 
 These are two libraries that are the foundation of FreeOS.
 
+Both libraries were written by Chris Galzerano - chrisg.co
+
 ## 1. ObjectiveCC
 **Bringing Foundation-Style Thinking to Pure C.**
 
 ## 2. CPUGraphics
 **Complex UI Rendering Engine without a GPU. Shapes, Colors, Text, and more.**
 **Much faster than LVGL. The fastest graphics library ever designed. Tested on tiny $3 chips and high res LCDs.**
+
+These libraries are very useful outside of FreeOS and can be used for any software project for their features.
+
 
