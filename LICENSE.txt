@@ -1,0 +1,56 @@
+=======================================================================
+FreeOS, ObjectiveCC, and CPUGraphics License Agreement
+=======================================================================
+
+Copyright (c) 2026 Chris Galzerano (chrisg.co). All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following strict conditions:
+
+1. ATTRIBUTION REQUIREMENT
+The above copyright notice, the author's name and website (Chris Galzerano, 
+chrisg.co), and this complete License Agreement MUST be included in all 
+copies or substantial portions of the Software. 
+
+If this Software is compiled into a binary, embedded in a hardware device, 
+or used in a commercial for-profit product, a copy of this license must be 
+visibly included in the product's attributions, credits, "About" screen, 
+or accompanying legal documentation.
+
+2. OBJECTIVECC AND APPLE INC. OPEN SOURCE DISCLAIMER
+ObjectiveCC is an independent, original C-based implementation written 
+entirely from scratch by Chris Galzerano. While it utilizes macro styles 
+and API structures inspired by Apple Inc.'s Objective-C and Foundation 
+frameworks (e.g., NSString-style macros), absolutely NO source code, 
+binaries, or proprietary runtimes from Apple Inc.'s open-source 
+repositories have been copied, cloned, or incorporated. Because this is 
+a clean-room implementation of a programming style, the Apple Public 
+Source License (APSL) is strictly not applicable to this Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+=======================================================================
+APPENDIX A: THIRD-PARTY SOFTWARE LICENSES
+=======================================================================
+FreeOS incorporates and relies upon open-source projects to operate. 
+The following third-party components are governed by their respective 
+licenses:
+
+1. ESP-IDF (Espressif IoT Development Framework)
+   Licensed under the Apache License, Version 2.0.
+   http://www.apache.org/licenses/LICENSE-2.0
+
+2. FreeType
+   Portions of this software are copyright (c) The FreeType 
+   Project (www.freetype.org). All rights reserved. 
+   Licensed under the FreeType License (FTL) / GPLv2.
