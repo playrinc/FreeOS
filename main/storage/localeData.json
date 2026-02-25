@@ -1,0 +1,18 @@
+[
+  {
+    "usesMetricSystem" : false,
+    "alternateQuotationBeginDelimiter" : "‘",
+    "alternateQuotationEndDelimiter" : "’",
+    "countryCode" : "US",
+    "quotationBeginDelimiter" : "“",
+    "quotationEndDelimiter" : "”",
+    "languageCode" : "en",
+    "groupingSeparator" : ",",
+    "currencySymbol" : "$",
+    "localeIdentifier" : "en_US",
+    "collatorIdentifier" : "en_US",
+    "decimalSeparator" : ".",
+    "calendarIdentifier" : "gregorian",
+    "currencyCode" : "USD"
+  }
+]

@@ -1,0 +1,2212 @@
+[
+  {
+    "name" : "Africa\/Abidjan",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Accra",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Addis_Ababa",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Africa\/Algiers",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Asmara",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Africa\/Bamako",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Bangui",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Banjul",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Bissau",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Blantyre",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Brazzaville",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Bujumbura",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Cairo",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Casablanca",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Ceuta",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Conakry",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Dakar",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Dar_es_Salaam",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Africa\/Djibouti",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Africa\/Douala",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/El_Aaiun",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Freetown",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Gaborone",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Harare",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Johannesburg",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Juba",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Kampala",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Africa\/Khartoum",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Kigali",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Kinshasa",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Lagos",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Libreville",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Lome",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Luanda",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Lubumbashi",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Lusaka",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Malabo",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Maputo",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Maseru",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Mbabane",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Mogadishu",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Africa\/Monrovia",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Nairobi",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Africa\/Ndjamena",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Niamey",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Nouakchott",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Ouagadougou",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Porto-Novo",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Sao_Tome",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Africa\/Tripoli",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Africa\/Tunis",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Africa\/Windhoek",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "America\/Adak",
+    "secondsFromGmt" : -36000,
+    "abbreviation" : "HAST"
+  },
+  {
+    "name" : "America\/Anchorage",
+    "secondsFromGmt" : -32400,
+    "abbreviation" : "AKST"
+  },
+  {
+    "name" : "America\/Anguilla",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Antigua",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Araguaina",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Buenos_Aires",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Catamarca",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Cordoba",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Jujuy",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/La_Rioja",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Mendoza",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Rio_Gallegos",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Salta",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/San_Juan",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/San_Luis",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Tucuman",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Argentina\/Ushuaia",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Aruba",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Asuncion",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Atikokan",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Bahia",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Bahia_Banderas",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Barbados",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Belem",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Belize",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Blanc-Sablon",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Boa_Vista",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "GMT-4"
+  },
+  {
+    "name" : "America\/Bogota",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "GMT-5"
+  },
+  {
+    "name" : "America\/Boise",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Cambridge_Bay",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Campo_Grande",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "GMT-4"
+  },
+  {
+    "name" : "America\/Cancun",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Caracas",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "GMT-4"
+  },
+  {
+    "name" : "America\/Cayenne",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Cayman",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Chicago",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Chihuahua",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Ciudad_Juarez",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Costa_Rica",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Creston",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Cuiaba",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "GMT-4"
+  },
+  {
+    "name" : "America\/Curacao",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Danmarkshavn",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "America\/Dawson",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "GMT-7"
+  },
+  {
+    "name" : "America\/Dawson_Creek",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Denver",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Detroit",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Dominica",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Edmonton",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Eirunepe",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "GMT-5"
+  },
+  {
+    "name" : "America\/El_Salvador",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Fort_Nelson",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Fortaleza",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Glace_Bay",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Godthab",
+    "secondsFromGmt" : -7200,
+    "abbreviation" : "GMT-2"
+  },
+  {
+    "name" : "America\/Goose_Bay",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Grand_Turk",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Grenada",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Guadeloupe",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Guatemala",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Guayaquil",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "GMT-5"
+  },
+  {
+    "name" : "America\/Guyana",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "GMT-4"
+  },
+  {
+    "name" : "America\/Halifax",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Havana",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "GMT-5"
+  },
+  {
+    "name" : "America\/Hermosillo",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "GMT-7"
+  },
+  {
+    "name" : "America\/Indiana\/Indianapolis",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Indiana\/Knox",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Indiana\/Marengo",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Indiana\/Petersburg",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Indiana\/Tell_City",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Indiana\/Vevay",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Indiana\/Vincennes",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Indiana\/Winamac",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Inuvik",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Iqaluit",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Jamaica",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Juneau",
+    "secondsFromGmt" : -32400,
+    "abbreviation" : "AKST"
+  },
+  {
+    "name" : "America\/Kentucky\/Louisville",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Kentucky\/Monticello",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Kralendijk",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/La_Paz",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "GMT-4"
+  },
+  {
+    "name" : "America\/Lima",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "GMT-5"
+  },
+  {
+    "name" : "America\/Los_Angeles",
+    "secondsFromGmt" : -28800,
+    "abbreviation" : "PST"
+  },
+  {
+    "name" : "America\/Lower_Princes",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Maceio",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Managua",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Manaus",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "GMT-4"
+  },
+  {
+    "name" : "America\/Marigot",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Martinique",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Matamoros",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Mazatlan",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "GMT-7"
+  },
+  {
+    "name" : "America\/Menominee",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Merida",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Metlakatla",
+    "secondsFromGmt" : -32400,
+    "abbreviation" : "AKST"
+  },
+  {
+    "name" : "America\/Mexico_City",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Miquelon",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Moncton",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Monterrey",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Montevideo",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Montreal",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Montserrat",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Nassau",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/New_York",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Nipigon",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Nome",
+    "secondsFromGmt" : -32400,
+    "abbreviation" : "AKST"
+  },
+  {
+    "name" : "America\/Noronha",
+    "secondsFromGmt" : -7200,
+    "abbreviation" : "GMT-2"
+  },
+  {
+    "name" : "America\/North_Dakota\/Beulah",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/North_Dakota\/Center",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/North_Dakota\/New_Salem",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Nuuk",
+    "secondsFromGmt" : -7200,
+    "abbreviation" : "GMT-2"
+  },
+  {
+    "name" : "America\/Ojinaga",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Panama",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Pangnirtung",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Paramaribo",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Phoenix",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Port-au-Prince",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Port_of_Spain",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Porto_Velho",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "GMT-4"
+  },
+  {
+    "name" : "America\/Puerto_Rico",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Punta_Arenas",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Rainy_River",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Rankin_Inlet",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Recife",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Regina",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Resolute",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Rio_Branco",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "GMT-5"
+  },
+  {
+    "name" : "America\/Santa_Isabel",
+    "secondsFromGmt" : -28800,
+    "abbreviation" : "PST"
+  },
+  {
+    "name" : "America\/Santarem",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Santiago",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Santo_Domingo",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Sao_Paulo",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "America\/Scoresbysund",
+    "secondsFromGmt" : -7200,
+    "abbreviation" : "GMT-2"
+  },
+  {
+    "name" : "America\/Shiprock",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "America\/Sitka",
+    "secondsFromGmt" : -32400,
+    "abbreviation" : "AKST"
+  },
+  {
+    "name" : "America\/St_Barthelemy",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/St_Johns",
+    "secondsFromGmt" : -12600,
+    "abbreviation" : "GMT-3:30"
+  },
+  {
+    "name" : "America\/St_Kitts",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/St_Lucia",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/St_Thomas",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/St_Vincent",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Swift_Current",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Tegucigalpa",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Thule",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Thunder_Bay",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Tijuana",
+    "secondsFromGmt" : -28800,
+    "abbreviation" : "PST"
+  },
+  {
+    "name" : "America\/Toronto",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "EST"
+  },
+  {
+    "name" : "America\/Tortola",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "America\/Vancouver",
+    "secondsFromGmt" : -28800,
+    "abbreviation" : "PST"
+  },
+  {
+    "name" : "America\/Whitehorse",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "GMT-7"
+  },
+  {
+    "name" : "America\/Winnipeg",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "CST"
+  },
+  {
+    "name" : "America\/Yakutat",
+    "secondsFromGmt" : -32400,
+    "abbreviation" : "AKST"
+  },
+  {
+    "name" : "America\/Yellowknife",
+    "secondsFromGmt" : -25200,
+    "abbreviation" : "MST"
+  },
+  {
+    "name" : "Antarctica\/Casey",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Antarctica\/Davis",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Antarctica\/DumontDUrville",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Antarctica\/Macquarie",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Antarctica\/Mawson",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Antarctica\/McMurdo",
+    "secondsFromGmt" : 46800,
+    "abbreviation" : "GMT+13"
+  },
+  {
+    "name" : "Antarctica\/Palmer",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "Antarctica\/Rothera",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "Antarctica\/South_Pole",
+    "secondsFromGmt" : 46800,
+    "abbreviation" : "GMT+13"
+  },
+  {
+    "name" : "Antarctica\/Syowa",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Antarctica\/Troll",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Antarctica\/Vostok",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Arctic\/Longyearbyen",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Asia\/Aden",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Asia\/Almaty",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Amman",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Asia\/Anadyr",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Asia\/Aqtau",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Aqtobe",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Ashgabat",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Atyrau",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Baghdad",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Asia\/Bahrain",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Asia\/Baku",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Asia\/Bangkok",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Barnaul",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Beirut",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Asia\/Bishkek",
+    "secondsFromGmt" : 21600,
+    "abbreviation" : "GMT+6"
+  },
+  {
+    "name" : "Asia\/Brunei",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Calcutta",
+    "secondsFromGmt" : 19800,
+    "abbreviation" : "GMT+5:30"
+  },
+  {
+    "name" : "Asia\/Chita",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Asia\/Choibalsan",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Chongqing",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Colombo",
+    "secondsFromGmt" : 19800,
+    "abbreviation" : "GMT+5:30"
+  },
+  {
+    "name" : "Asia\/Damascus",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Asia\/Dhaka",
+    "secondsFromGmt" : 21600,
+    "abbreviation" : "GMT+6"
+  },
+  {
+    "name" : "Asia\/Dili",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Asia\/Dubai",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Asia\/Dushanbe",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Famagusta",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Asia\/Gaza",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Asia\/Harbin",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Hebron",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Asia\/Ho_Chi_Minh",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Hong_Kong",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Hovd",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Irkutsk",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Jakarta",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Jayapura",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Asia\/Jerusalem",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Asia\/Kabul",
+    "secondsFromGmt" : 16200,
+    "abbreviation" : "GMT+4:30"
+  },
+  {
+    "name" : "Asia\/Kamchatka",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Asia\/Karachi",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Kashgar",
+    "secondsFromGmt" : 21600,
+    "abbreviation" : "GMT+6"
+  },
+  {
+    "name" : "Asia\/Kathmandu",
+    "secondsFromGmt" : 20700,
+    "abbreviation" : "GMT+5:45"
+  },
+  {
+    "name" : "Asia\/Katmandu",
+    "secondsFromGmt" : 20700,
+    "abbreviation" : "GMT+5:45"
+  },
+  {
+    "name" : "Asia\/Khandyga",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Asia\/Krasnoyarsk",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Kuala_Lumpur",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Kuching",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Kuwait",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Asia\/Macau",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Magadan",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Asia\/Makassar",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Manila",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Muscat",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Asia\/Nicosia",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Asia\/Novokuznetsk",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Novosibirsk",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Omsk",
+    "secondsFromGmt" : 21600,
+    "abbreviation" : "GMT+6"
+  },
+  {
+    "name" : "Asia\/Oral",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Phnom_Penh",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Pontianak",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Pyongyang",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Asia\/Qatar",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Asia\/Qostanay",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Qyzylorda",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Rangoon",
+    "secondsFromGmt" : 23400,
+    "abbreviation" : "GMT+6:30"
+  },
+  {
+    "name" : "Asia\/Riyadh",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Asia\/Sakhalin",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Asia\/Samarkand",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Seoul",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Asia\/Shanghai",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Singapore",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Srednekolymsk",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Asia\/Taipei",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Tashkent",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Tbilisi",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Asia\/Tehran",
+    "secondsFromGmt" : 12600,
+    "abbreviation" : "GMT+3:30"
+  },
+  {
+    "name" : "Asia\/Thimphu",
+    "secondsFromGmt" : 21600,
+    "abbreviation" : "GMT+6"
+  },
+  {
+    "name" : "Asia\/Tokyo",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Asia\/Tomsk",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Ulaanbaatar",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Asia\/Urumqi",
+    "secondsFromGmt" : 21600,
+    "abbreviation" : "GMT+6"
+  },
+  {
+    "name" : "Asia\/Ust-Nera",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Asia\/Vientiane",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Asia\/Vladivostok",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Asia\/Yakutsk",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Asia\/Yangon",
+    "secondsFromGmt" : 23400,
+    "abbreviation" : "GMT+6:30"
+  },
+  {
+    "name" : "Asia\/Yekaterinburg",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Asia\/Yerevan",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Atlantic\/Azores",
+    "secondsFromGmt" : -3600,
+    "abbreviation" : "GMT-1"
+  },
+  {
+    "name" : "Atlantic\/Bermuda",
+    "secondsFromGmt" : -14400,
+    "abbreviation" : "AST"
+  },
+  {
+    "name" : "Atlantic\/Canary",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Atlantic\/Cape_Verde",
+    "secondsFromGmt" : -3600,
+    "abbreviation" : "GMT-1"
+  },
+  {
+    "name" : "Atlantic\/Faroe",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Atlantic\/Madeira",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Atlantic\/Reykjavik",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Atlantic\/South_Georgia",
+    "secondsFromGmt" : -7200,
+    "abbreviation" : "GMT-2"
+  },
+  {
+    "name" : "Atlantic\/St_Helena",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Atlantic\/Stanley",
+    "secondsFromGmt" : -10800,
+    "abbreviation" : "GMT-3"
+  },
+  {
+    "name" : "Australia\/Adelaide",
+    "secondsFromGmt" : 37800,
+    "abbreviation" : "GMT+10:30"
+  },
+  {
+    "name" : "Australia\/Brisbane",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Australia\/Broken_Hill",
+    "secondsFromGmt" : 37800,
+    "abbreviation" : "GMT+10:30"
+  },
+  {
+    "name" : "Australia\/Currie",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Australia\/Darwin",
+    "secondsFromGmt" : 34200,
+    "abbreviation" : "GMT+9:30"
+  },
+  {
+    "name" : "Australia\/Eucla",
+    "secondsFromGmt" : 31500,
+    "abbreviation" : "GMT+8:45"
+  },
+  {
+    "name" : "Australia\/Hobart",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Australia\/Lindeman",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Australia\/Lord_Howe",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Australia\/Melbourne",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Australia\/Perth",
+    "secondsFromGmt" : 28800,
+    "abbreviation" : "GMT+8"
+  },
+  {
+    "name" : "Australia\/Sydney",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Europe\/Amsterdam",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Andorra",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Astrakhan",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Europe\/Athens",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Belgrade",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Berlin",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Bratislava",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Brussels",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Bucharest",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Budapest",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Busingen",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Chisinau",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Copenhagen",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Dublin",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Europe\/Gibraltar",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Guernsey",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Europe\/Helsinki",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Isle_of_Man",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Europe\/Istanbul",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Europe\/Jersey",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Europe\/Kaliningrad",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Kiev",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Kirov",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Europe\/Kyiv",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Lisbon",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Europe\/Ljubljana",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/London",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Europe\/Luxembourg",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Madrid",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Malta",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Mariehamn",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Minsk",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Europe\/Monaco",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Moscow",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Europe\/Oslo",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Paris",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Podgorica",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Prague",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Riga",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Rome",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Samara",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Europe\/San_Marino",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Sarajevo",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Saratov",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Europe\/Simferopol",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Europe\/Skopje",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Sofia",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Stockholm",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Tallinn",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Tirane",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Ulyanovsk",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Europe\/Uzhgorod",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Vaduz",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Vatican",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Vienna",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Vilnius",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Volgograd",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Europe\/Warsaw",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Zagreb",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "Europe\/Zaporozhye",
+    "secondsFromGmt" : 7200,
+    "abbreviation" : "GMT+2"
+  },
+  {
+    "name" : "Europe\/Zurich",
+    "secondsFromGmt" : 3600,
+    "abbreviation" : "GMT+1"
+  },
+  {
+    "name" : "GMT",
+    "secondsFromGmt" : 0,
+    "abbreviation" : "GMT"
+  },
+  {
+    "name" : "Indian\/Antananarivo",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Indian\/Chagos",
+    "secondsFromGmt" : 21600,
+    "abbreviation" : "GMT+6"
+  },
+  {
+    "name" : "Indian\/Christmas",
+    "secondsFromGmt" : 25200,
+    "abbreviation" : "GMT+7"
+  },
+  {
+    "name" : "Indian\/Cocos",
+    "secondsFromGmt" : 23400,
+    "abbreviation" : "GMT+6:30"
+  },
+  {
+    "name" : "Indian\/Comoro",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Indian\/Kerguelen",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Indian\/Mahe",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Indian\/Maldives",
+    "secondsFromGmt" : 18000,
+    "abbreviation" : "GMT+5"
+  },
+  {
+    "name" : "Indian\/Mauritius",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Indian\/Mayotte",
+    "secondsFromGmt" : 10800,
+    "abbreviation" : "GMT+3"
+  },
+  {
+    "name" : "Indian\/Reunion",
+    "secondsFromGmt" : 14400,
+    "abbreviation" : "GMT+4"
+  },
+  {
+    "name" : "Pacific\/Apia",
+    "secondsFromGmt" : 46800,
+    "abbreviation" : "GMT+13"
+  },
+  {
+    "name" : "Pacific\/Auckland",
+    "secondsFromGmt" : 46800,
+    "abbreviation" : "GMT+13"
+  },
+  {
+    "name" : "Pacific\/Bougainville",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Pacific\/Chatham",
+    "secondsFromGmt" : 49500,
+    "abbreviation" : "GMT+13:45"
+  },
+  {
+    "name" : "Pacific\/Chuuk",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Pacific\/Easter",
+    "secondsFromGmt" : -18000,
+    "abbreviation" : "GMT-5"
+  },
+  {
+    "name" : "Pacific\/Efate",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Pacific\/Enderbury",
+    "secondsFromGmt" : 46800,
+    "abbreviation" : "GMT+13"
+  },
+  {
+    "name" : "Pacific\/Fakaofo",
+    "secondsFromGmt" : 46800,
+    "abbreviation" : "GMT+13"
+  },
+  {
+    "name" : "Pacific\/Fiji",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Pacific\/Funafuti",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Pacific\/Galapagos",
+    "secondsFromGmt" : -21600,
+    "abbreviation" : "GMT-6"
+  },
+  {
+    "name" : "Pacific\/Gambier",
+    "secondsFromGmt" : -32400,
+    "abbreviation" : "GMT-9"
+  },
+  {
+    "name" : "Pacific\/Guadalcanal",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Pacific\/Guam",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Pacific\/Honolulu",
+    "secondsFromGmt" : -36000,
+    "abbreviation" : "HST"
+  },
+  {
+    "name" : "Pacific\/Johnston",
+    "secondsFromGmt" : -36000,
+    "abbreviation" : "HST"
+  },
+  {
+    "name" : "Pacific\/Kanton",
+    "secondsFromGmt" : 46800,
+    "abbreviation" : "GMT+13"
+  },
+  {
+    "name" : "Pacific\/Kiritimati",
+    "secondsFromGmt" : 50400,
+    "abbreviation" : "GMT+14"
+  },
+  {
+    "name" : "Pacific\/Kosrae",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Pacific\/Kwajalein",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Pacific\/Majuro",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Pacific\/Marquesas",
+    "secondsFromGmt" : -34200,
+    "abbreviation" : "GMT-9:30"
+  },
+  {
+    "name" : "Pacific\/Midway",
+    "secondsFromGmt" : -39600,
+    "abbreviation" : "GMT-11"
+  },
+  {
+    "name" : "Pacific\/Nauru",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Pacific\/Niue",
+    "secondsFromGmt" : -39600,
+    "abbreviation" : "GMT-11"
+  },
+  {
+    "name" : "Pacific\/Norfolk",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Pacific\/Noumea",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Pacific\/Pago_Pago",
+    "secondsFromGmt" : -39600,
+    "abbreviation" : "GMT-11"
+  },
+  {
+    "name" : "Pacific\/Palau",
+    "secondsFromGmt" : 32400,
+    "abbreviation" : "GMT+9"
+  },
+  {
+    "name" : "Pacific\/Pitcairn",
+    "secondsFromGmt" : -28800,
+    "abbreviation" : "GMT-8"
+  },
+  {
+    "name" : "Pacific\/Pohnpei",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Pacific\/Ponape",
+    "secondsFromGmt" : 39600,
+    "abbreviation" : "GMT+11"
+  },
+  {
+    "name" : "Pacific\/Port_Moresby",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Pacific\/Rarotonga",
+    "secondsFromGmt" : -36000,
+    "abbreviation" : "GMT-10"
+  },
+  {
+    "name" : "Pacific\/Saipan",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Pacific\/Tahiti",
+    "secondsFromGmt" : -36000,
+    "abbreviation" : "GMT-10"
+  },
+  {
+    "name" : "Pacific\/Tarawa",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Pacific\/Tongatapu",
+    "secondsFromGmt" : 46800,
+    "abbreviation" : "GMT+13"
+  },
+  {
+    "name" : "Pacific\/Truk",
+    "secondsFromGmt" : 36000,
+    "abbreviation" : "GMT+10"
+  },
+  {
+    "name" : "Pacific\/Wake",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  },
+  {
+    "name" : "Pacific\/Wallis",
+    "secondsFromGmt" : 43200,
+    "abbreviation" : "GMT+12"
+  }
+]
