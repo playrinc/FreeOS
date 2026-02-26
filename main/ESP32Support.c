@@ -13,6 +13,7 @@
 #include "FilesApp.h"
 #include "ClockApp.h"
 #include "PaintApp.h"
+#include "MusicApp.h"
 
 wl_handle_t wl_handle = WL_INVALID_HANDLE;
 
@@ -2734,6 +2735,9 @@ void updateTouch(void *pvParameter) {
                 if (currentView == CurrentViewPaint) {
                     handle_paint_touch(0, 0, is_currently_pressed);
                 }
+                if (currentView == CurrentViewMusic) {
+                    handle_music_touch(0, 0, is_currently_pressed);
+                }
                 
             }
             
@@ -2811,6 +2815,9 @@ void updateTouch(void *pvParameter) {
                     }
                     if (currentView == CurrentViewPaint) {
                         handle_paint_touch(x, y, is_currently_pressed);
+                    }
+                    if (currentView == CurrentViewMusic) {
+                        handle_music_touch(x, y, is_currently_pressed);
                     }
                     
                 }

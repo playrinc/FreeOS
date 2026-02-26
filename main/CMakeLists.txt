@@ -1,7 +1,7 @@
 
 
 
-idf_component_register(SRCS "main.c" "cJSON_Utils.c" "cJSON.c" "ObjectiveCC.c" "CPUGraphics.c" "FT6336U.c" "es8311.c" "FreeOS.c" "SystemApps.c" "ESP32Support.c" "QueueWrapper.c" "TaskWrapper.c" "FilesApp.c" "ClockApp.c" "ColorWheel.c" "PaintApp.c"
+idf_component_register(SRCS "main.c" "cJSON_Utils.c" "cJSON.c" "ObjectiveCC.c" "CPUGraphics.c" "FT6336U.c" "es8311.c" "FreeOS.c" "SystemApps.c" "ESP32Support.c" "QueueWrapper.c" "TaskWrapper.c" "FilesApp.c" "ClockApp.c" "ColorWheel.c" "PaintApp.c" "MusicApp.c"
                     PRIV_REQUIRES esp_wifi nvs_flash fatfs vfs esp_lcd esp_adc esp_timer esp_lcd_touch esp_lcd_ili9488 esp_lcd_touch_ft6x36 freetype espcoredump esp-dsp esp_h264
                     INCLUDE_DIRS "."
 REQUIRES "esp_psram" "littlefs" "fatfs" "vfs" "driver" "esp_lcd" "lvgl" "esp_lvgl_port" "esp_adc"  "esp_lcd_touch" "esp_lcd_ili9488" "esp_timer" "esp_lcd_touch_ft6x36" "freetype" "espcoredump" "esp-dsp" "esp_h264"

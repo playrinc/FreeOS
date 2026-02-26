@@ -116,6 +116,7 @@ typedef struct {
     // General
     bool fill;
     int shadowSize;
+    float alpha;
 } GraphicsCommand;
 
 typedef enum {
@@ -302,6 +303,7 @@ CCString* formatFileSize(int bytes);
 CCView* create_key_btn(const char* text, int x, int y, int w, int h, int tag);
 void layout_keyboard_keys(void);
 void setup_keyboard_ui(CCLabel* targetLabel);
+void hide_keyboard_ui(void);
 CCView* find_key_at_point(int x, int y);
 void handle_keyboard_touch(int x, int y);
 void debug_print_view_hierarchy(CCView* view, int depth);

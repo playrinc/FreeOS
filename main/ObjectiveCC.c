@@ -957,6 +957,9 @@ CCImageView* imageView(void) {
     CCImageView* newImageView = (CCImageView*)cc_safe_alloc(1, sizeof(CCImageView));
     newImageView->type = CCType_ImageView;
     if (!newImageView) return NULL;
+    
+    newImageView->alpha = 1.0;
+    newImageView->ignoreTouch = false;
 
     newImageView->view = view();
     if (!newImageView->view) {
@@ -971,6 +974,9 @@ CCImageView* imageViewWithFrame(CCRect* frame) {
     CCImageView* newImageView = (CCImageView*)cc_safe_alloc(1, sizeof(CCImageView));
     newImageView->type = CCType_ImageView;
     if (!newImageView) return NULL;
+    
+    newImageView->alpha = 1.0;
+    newImageView->ignoreTouch = false;
 
     newImageView->view = viewWithFrame(frame);
     if (!newImageView->view) {

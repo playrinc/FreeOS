@@ -469,6 +469,7 @@ typedef struct {
     CCImage* image;
     int tag;
     bool ignoreTouch;
+    float alpha;
 } CCImageView;
 
 // 2. CCScrollView: A generic container that clips and scrolls its content

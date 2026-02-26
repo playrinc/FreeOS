@@ -1271,6 +1271,7 @@ void drawViewHierarchy(void* object, int parentX, int parentY, CCRect currentCli
             
             GraphicsCommand cmd_img = {
                 .cmd = CMD_DRAW_IMAGE_FILE,
+                .alpha = imgView->alpha,
                 .x = absX, .y = absY, .w = w, .h = h,
                 .clipX = (int)myEffectiveClip.origin->x,
                 .clipY = (int)myEffectiveClip.origin->y,
@@ -1287,6 +1288,7 @@ void drawViewHierarchy(void* object, int parentX, int parentY, CCRect currentCli
         if (imgView->image->imageData) {
             GraphicsCommand cmd = {
                 .cmd = CMD_DRAW_PIXEL_BUFFER, // Use the new buffer command
+                //.alpha = imgView->alpha,
                 .x = absX,
                 .y = absY,
                 .w = imgView->image->size->width,  // Use image size
@@ -1976,6 +1978,29 @@ void layout_keyboard_keys(void) {
     viewAddSubview(uiKeyboardView, create_key_btn("Ret", KEY_MARGIN + keyW*2 + KEY_MARGIN + spaceW + KEY_MARGIN, y4, screenW - (KEY_MARGIN + keyW*2 + KEY_MARGIN + spaceW + KEY_MARGIN) - KEY_MARGIN, KEY_HEIGHT, TAG_KB_RETURN));
 }
 
+void hide_keyboard_ui(void) {
+    printf("--- Teardown Keyboard UI Start ---\n");
+
+    // 1. Destroy the visual keyboard view
+    if (uiKeyboardView) {
+        viewRemoveFromSuperview(uiKeyboardView);
+        freeViewHierarchy(uiKeyboardView);
+        uiKeyboardView = NULL;
+        printf("Keyboard View Freed.\n");
+    }
+
+    // 2. Clear the input string buffer
+    if (uiInputBuffer) {
+        freeCCString(uiInputBuffer);
+        uiInputBuffer = NULL;
+    }
+
+    // 3. Clear the target pointer (we don't free the label, just our link to it!)
+    uiTargetLabel = NULL;
+
+    printf("--- Teardown Keyboard UI Done ---\n");
+}
+
 void setup_keyboard_ui(CCLabel* targetLabel) {
     printf("--- Setup Keyboard UI Start ---\n");
 
@@ -2318,6 +2343,7 @@ void rotating_image_task(void *pvParameter) {
             .x = IMG_ANIM_X, .y = IMG_ANIM_Y, // Logical bounds (for updates)
             .w = IMG_ANIM_W, .h = IMG_ANIM_H,
             .hasTransform = true,
+            .alpha = 1.0,
             .transform = mat_final
         };
         
@@ -4532,11 +4558,11 @@ void graphics_task(void *arg)
                             );
                         } else {
                             // B. Standard Draw (Fast Axis-Aligned Blit)
-                            drawImageTexture(
+                            drawImageTextureWithAlpha(
                                 &fb,
                                 tex,
                                 cmd.x, cmd.y,
-                                cmd.w, cmd.h
+                                cmd.w, cmd.h, cmd.alpha
                             );
                         }
                         if (tex->data) heap_caps_free(tex->data);

@@ -4088,6 +4088,171 @@ void drawImageTexture(Framebuffer *framebuffer, const ImageTexture *texture, int
     }
 }
 
+void drawImageTextureWithAlpha(Framebuffer *framebuffer, const ImageTexture *texture, int x, int y, int width, int height, float alpha) {
+    // Safety clamp to ensure alpha stays between 0.0 and 1.0
+    if (alpha < 0.0f) alpha = 0.0f;
+    if (alpha > 1.0f) alpha = 1.0f;
+
+    // Calculate scaling factors for texture mapping
+    float scaleX = (float)texture->width / width;
+    float scaleY = (float)texture->height / height;
+
+    for (int i = 0; i < height; i++) {
+        for (int j = 0; j < width; j++) {
+            // Calculate the corresponding position in the texture
+            int texX = (int)(j * scaleX);
+            int texY = (int)(i * scaleY);
+
+            int framebufferX = x + j;
+            int framebufferY = y + i;
+
+            if (framebufferX >= 0 && framebufferX < framebuffer->displayWidth && framebufferY >= 0 && framebufferY < framebuffer->displayHeight) {
+                
+                // 1. Get the original color from the texture
+                ColorRGBA textureColor = texture->data[texY * texture->width + texX];
+
+                // 2. Pre-multiply the pixel's intrinsic alpha by the global alpha modifier
+                textureColor.a = (uint8_t)(textureColor.a * alpha);
+
+                // 3. OPTIMIZATION: If the pixel is now fully transparent, skip the math entirely!
+                if (textureColor.a == 0) {
+                    continue;
+                }
+
+                switch (framebuffer->colorMode) {
+                    case COLOR_MODE_TWO:
+                    {
+                        uint8_t *pixelByte = (uint8_t *)framebuffer->pixelData + (framebufferY * framebuffer->displayWidth + framebufferX) / 8;
+                        int bitIndex = 7 - ((framebufferY * framebuffer->displayWidth + framebufferX) % 8);
+                        // Thresholding for 1-bit monochrome (alpha > 128 considered solid enough to draw if color matches)
+                        if (textureColor.a > 128 && textureColor.r == framebuffer->colors[1].r && textureColor.g == framebuffer->colors[1].g && textureColor.b == framebuffer->colors[1].b) {
+                            *pixelByte |= (1 << bitIndex);
+                        } else {
+                            *pixelByte &= ~(1 << bitIndex);
+                        }
+                        break;
+                    }
+                    case COLOR_MODE_SIXTEEN:
+                    {
+                        // 16-color mode generally doesn't support alpha blending, so we write if visible
+                        if (textureColor.a > 128) {
+                            uint8_t *pixelByte = (uint8_t *)framebuffer->pixelData + (framebufferY * framebuffer->displayWidth + framebufferX) / 2;
+                            int nibbleShift = ((framebufferY * framebuffer->displayWidth + framebufferX) % 2) ? 0 : 4;
+                            uint8_t colorIndex = (textureColor.r >> 4) & 0xF;
+                            *pixelByte = (*pixelByte & (~(0xF << nibbleShift))) | (colorIndex << nibbleShift);
+                        }
+                        break;
+                    }
+                    case COLOR_MODE_256:
+                    {
+                        if (textureColor.a > 128) {
+                            uint8_t *pixelByte = (uint8_t *)framebuffer->pixelData + framebufferY * framebuffer->displayWidth + framebufferX;
+                            *pixelByte = (textureColor.r >> 6) | ((textureColor.g >> 6) << 2) | ((textureColor.b >> 6) << 4);
+                        }
+                        break;
+                    }
+                    case COLOR_MODE_RGBA:
+                    {
+                        ColorRGBA *fbColor = &((ColorRGBA*)framebuffer->pixelData)[framebufferY * framebuffer->displayWidth + framebufferX];
+                        // Since we already pre-multiplied textureColor.a, normal blendPixel handles it perfectly
+                        blendPixel(fbColor, textureColor);
+                        break;
+                    }
+                    case COLOR_MODE_BGR888:
+                    {
+                        // Your integer-math writer instantly processes the pre-multiplied alpha
+                        write_pixel_rgb888(framebuffer, framebufferX, framebufferY, textureColor);
+                        break;
+                    }
+                    default:
+                        break;
+                }
+            }
+        }
+    }
+}
+
+/*void drawImageTextureWithAlpha(Framebuffer *fb, const ImageTexture *texture,
+                               int x, int y, int width, int height, float alpha) {
+    drawImageTextureWithAlphaClip(fb, texture, x, y, width, height, alpha, 0, 0, fb->displayWidth, fb->displayHeight);
+}*/
+
+void drawImageTextureWithAlphaClip(Framebuffer *fb, const ImageTexture *texture,
+                               int x, int y, int width, int height, float alpha,
+                               int clipX, int clipY, int clipW, int clipH) {
+
+    // 1. CLIP RECTANGLE INTERSECTION (Remove bounds checks from loop)
+    int startX = (x > clipX) ? x : clipX;
+    int startY = (y > clipY) ? y : clipY;
+    int endX   = ((x + width) < (clipX + clipW)) ? (x + width) : (clipX + clipW);
+    int endY   = ((y + height) < (clipY + clipH)) ? (y + height) : (clipY + clipH);
+
+    if (endX <= startX || endY <= startY) return;
+
+    // 2. CONVERT FLOAT ALPHA TO FAST INTEGER MULTIPLIER (0 to 256)
+    if (alpha < 0.0f) alpha = 0.0f;
+    if (alpha > 1.0f) alpha = 1.0f;
+    uint32_t global_alpha_fp = (uint32_t)(alpha * 256.0f);
+    if (global_alpha_fp > 256) global_alpha_fp = 256;
+
+    // 3. SETUP FIXED POINT SCALING (Q16.16)
+    int32_t fp_scaleX = (width > 0) ? ((texture->width << 16) / width) : 0;
+    int32_t fp_scaleY = (height > 0) ? ((texture->height << 16) / height) : 0;
+
+    int offsetX = startX - x;
+    int offsetY = startY - y;
+
+    int32_t startU = offsetX * fp_scaleX;
+    int32_t startV = offsetY * fp_scaleY;
+
+    // We only support BGR888 in the fast path for simplicity here.
+    if (fb->colorMode != COLOR_MODE_BGR888) return;
+
+    for (int i = startY; i < endY; i++) {
+        
+        int texY = startV >> 16;
+        if (texY >= texture->height) texY = texture->height - 1;
+
+        const ColorRGBA *texRowPtr = &texture->data[texY * texture->width];
+        int32_t currentU = startU;
+
+        int fbIdx = (i * fb->displayWidth + startX) * 3;
+        uint8_t *fbPtr = (uint8_t *)fb->pixelData + fbIdx;
+
+        for (int j = startX; j < endX; j++) {
+            
+            int texX = currentU >> 16;
+            if (texX >= texture->width) texX = texture->width - 1;
+
+            ColorRGBA val = texRowPtr[texX];
+
+            // FAST GLOBAL ALPHA PRE-MULTIPLY (Integer math only!)
+            uint8_t final_a = (val.a * global_alpha_fp) >> 8;
+
+            // ONLY draw if the pixel has visible opacity
+            if (final_a > 0) {
+                if (final_a == 255) {
+                    fbPtr[0] = val.b;
+                    fbPtr[1] = val.g;
+                    fbPtr[2] = val.r;
+                } else {
+                    // Alpha Blend
+                    uint16_t inv_a = 256 - final_a;
+                    fbPtr[0] = (val.b * final_a + fbPtr[0] * inv_a) >> 8;
+                    fbPtr[1] = (val.g * final_a + fbPtr[1] * inv_a) >> 8;
+                    fbPtr[2] = (val.r * final_a + fbPtr[2] * inv_a) >> 8;
+                }
+            }
+
+            // INCREMENT (Must happen outside the 'if' block so we don't desync pointers)
+            fbPtr += 3;
+            currentU += fp_scaleX;
+        }
+
+        startV += fp_scaleY;
+    }
+}
+
 void drawImageTextureOptimizedExtended(Framebuffer *fb, const ImageTexture *texture,
                                int x, int y, int width, int height,
                                int clipX, int clipY, int clipW, int clipH) {

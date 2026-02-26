@@ -38,25 +38,10 @@ extern bool calcIsNewEntry;
 #define TAG_BTN_MUL 14
 #define TAG_BTN_DIV 15
 
+#define SCREEN_W 320
+
 void update_calculator_label(void);
 extern CCLabel* uiCalcLabel;
-
-// --- Music Player Globals ---
-extern CCLabel* uiMusicTitleLbl;
-extern CCLabel* uiMusicArtistLbl;
-extern CCView* uiMusicProgressFill;
-extern CCLabel* uiMusicPlayBtnLbl;
-
-// Tag Constants
-#define TAG_MUSIC_PREV 20
-#define TAG_MUSIC_PLAY 21
-#define TAG_MUSIC_NEXT 22
-#define TAG_MUSIC_PROGRESS_BAR 23
-
-// Layout Constants
-#define SCREEN_W 320
-#define MAIN_PADDING 20
-#define ART_SIZE 280
 
 // --- Gallery Globals ---
 extern CCArray* galleryImagePaths;
@@ -130,8 +115,6 @@ void handle_settings_touch(int x, int y, int touchState);
 void handle_calculator_input(int tag);
 void setup_calculator_ui(void);
 void update_calculator_label(void);
-void setup_music_player_ui(void);
-void update_music_progress(float percentage);
 void init_gallery_data();
 void handle_gallery_touch(int tag);
 void layout_grid_mode(void);

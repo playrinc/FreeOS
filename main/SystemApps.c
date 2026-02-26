@@ -10,6 +10,7 @@
 #include "FilesApp.h"
 #include "ClockApp.h"
 #include "PaintApp.h"
+#include "MusicApp.h"
 
 // --- Settings Globals ---
 // Removed 'static', added definitions
@@ -24,12 +25,6 @@ double calcStoredValue = 0.0;
 char calcCurrentOp = 0;
 bool calcIsNewEntry = true;
 CCLabel* uiCalcLabel = NULL;
-
-// --- Music Player Globals ---
-CCLabel* uiMusicTitleLbl = NULL;
-CCLabel* uiMusicArtistLbl = NULL;
-CCView* uiMusicProgressFill = NULL;
-CCLabel* uiMusicPlayBtnLbl = NULL;
 
 // --- Gallery Globals ---
 CCArray* galleryImagePaths = NULL;
@@ -849,193 +844,6 @@ void update_calculator_label(void) {
     }
 }
 
-void setup_music_player_ui(void) {
-    // 1. Reset Root View
-    currentView = CurrentViewMusic;
-    //if (mainWindowView) freeViewHierarchy(mainWindowView);
-    mainWindowView = viewWithFrame(ccRect(0, 0, SCREEN_W, 480));
-    mainWindowView->backgroundColor = color(0.08, 0.08, 0.12, 1.0);
-
-    // --- TIGHTER LAYOUT MATH ---
-    int topPadding = 30;
-    int artSize = 220; // Reduced from 280
-    int currentY = topPadding;
-
-    //================================================================
-    // 2. Album Artwork
-    //================================================================
-    // Centered horizontally: (320 - 220) / 2 = 50
-    int artX = (SCREEN_W - artSize) / 2;
-    CCView* artView = viewWithFrame(ccRect(artX, currentY, artSize, artSize));
-    artView->backgroundColor = color(0.2, 0.25, 0.35, 1.0);
-    layerSetCornerRadius(artView->layer, 20.0);
-    artView->layer->shadowOpacity = 0.6;
-    artView->layer->shadowRadius = 15;
-    artView->layer->shadowOffset = ccPoint(0, 10);
-    
-    viewAddSubview(mainWindowView, artView);
-    currentY += artSize + 25; // Gap reduced to 25
-
-    //================================================================
-    // 3. Track Information
-    //================================================================
-    // Song Title
-    uiMusicTitleLbl = labelWithFrame(ccRect(20, currentY, 280, 28));
-    uiMusicTitleLbl->text = ccs("Song Title Placeholder");
-    uiMusicTitleLbl->textColor = color(1, 1, 1, 1);
-    uiMusicTitleLbl->fontSize = 22; // Slightly smaller font
-    uiMusicTitleLbl->textAlignment = CCTextAlignmentCenter;
-    viewAddSubview(mainWindowView, uiMusicTitleLbl);
-    currentY += 28;
-
-    // Artist Name
-    uiMusicArtistLbl = labelWithFrame(ccRect(20, currentY, 280, 20));
-    uiMusicArtistLbl->text = ccs("Artist Name");
-    uiMusicArtistLbl->textColor = color(0.7, 0.7, 0.8, 1.0);
-    uiMusicArtistLbl->fontSize = 14;
-    uiMusicArtistLbl->textAlignment = CCTextAlignmentCenter;
-    viewAddSubview(mainWindowView, uiMusicArtistLbl);
-    currentY += 20 + 20; // Gap reduced to 20
-
-    //================================================================
-    // 4. Progress Section
-    //================================================================
-    int progressHeight = 6;
-    int progressWidth = 280; // 20px padding on each side
-    int progressX = 20;
-    
-    // A. Track
-    CCView* progressTrack = viewWithFrame(ccRect(progressX, currentY, progressWidth, progressHeight));
-    progressTrack->backgroundColor = color(0.2, 0.2, 0.25, 1.0);
-    layerSetCornerRadius(progressTrack->layer, progressHeight / 2.0);
-    progressTrack->tag = TAG_MUSIC_PROGRESS_BAR;
-    viewAddSubview(mainWindowView, progressTrack);
-
-    // B. Fill
-    uiMusicProgressFill = viewWithFrame(ccRect(progressX, currentY, 0, progressHeight)); // Width 0 init
-    uiMusicProgressFill->backgroundColor = color(0.0, 0.8, 1.0, 1.0);
-    layerSetCornerRadius(uiMusicProgressFill->layer, progressHeight / 2.0);
-    // uiMusicProgressFill->userInteractionEnabled = false;
-    viewAddSubview(mainWindowView, uiMusicProgressFill);
-    currentY += progressHeight + 8;
-
-    // C. Timestamps
-    CCLabel* currTimeLbl = labelWithFrame(ccRect(20, currentY, 60, 14));
-    currTimeLbl->text = ccs("0:00");
-    currTimeLbl->textColor = color(0.6, 0.6, 0.7, 1.0);
-    currTimeLbl->fontSize = 10;
-    viewAddSubview(mainWindowView, currTimeLbl);
-
-    CCLabel* totalTimeLbl = labelWithFrame(ccRect(SCREEN_W - 80, currentY, 60, 14));
-    totalTimeLbl->text = ccs("-:--");
-    totalTimeLbl->textColor = color(0.6, 0.6, 0.7, 1.0);
-    totalTimeLbl->fontSize = 10;
-    totalTimeLbl->textAlignment = CCTextAlignmentRight;
-    viewAddSubview(mainWindowView, totalTimeLbl);
-    
-    currentY += 14 + 20; // Gap reduced to 20
-
-    //================================================================
-    // 5. Playback Controls
-    //================================================================
-    // Current Y should be approx 395px.
-    // We have 85px remaining.
-    
-    int playBtnSize = 64; // Reduced slightly from 74
-    int sideBtnSize = 44; // Reduced slightly from 54
-    int spacing = 30;
-    int centerX = SCREEN_W / 2;
-    
-    // We want the CENTER of the buttons to be at a specific Y,
-    // ensuring they don't hit the bottom edge.
-    // Let's place the button Top at currentY.
-    // Button Bottom will be 395 + 64 = 459px. (Safe!)
-    
-    int controlsCenterY = currentY + (playBtnSize / 2);
-
-    // A. Play Button
-        CCView* playBtn = viewWithFrame(ccRect(centerX - (playBtnSize/2), currentY, playBtnSize, playBtnSize));
-        playBtn->backgroundColor = color(0.0, 0.8, 1.0, 1.0);
-        layerSetCornerRadius(playBtn->layer, playBtnSize / 2.0);
-        playBtn->tag = TAG_MUSIC_PLAY;
-        
-        // --- SHADOW FIX ---
-        playBtn->layer->shadowOpacity = 0.4;
-        playBtn->layer->shadowRadius = 8;
-        playBtn->layer->shadowOffset = ccPoint(0, 4); // <--- MUST BE SET to allocate the pointer!
-        // ------------------
-        
-        uiMusicPlayBtnLbl = labelWithFrame(ccRect(0, 0, playBtnSize, playBtnSize));
-        uiMusicPlayBtnLbl->text = ccs(">");
-        uiMusicPlayBtnLbl->textColor = color(1, 1, 1, 1);
-        uiMusicPlayBtnLbl->fontSize = 28;
-        uiMusicPlayBtnLbl->textAlignment = CCTextAlignmentCenter;
-        uiMusicPlayBtnLbl->textVerticalAlignment = CCTextVerticalAlignmentCenter;
-        viewAddSubview(playBtn, uiMusicPlayBtnLbl);
-        viewAddSubview(mainWindowView, playBtn);
-    
-    
-
-    // B. Prev Button
-    // Align centers vertically
-    int prevX = centerX - (playBtnSize/2) - spacing - sideBtnSize;
-    int sideBtnY = controlsCenterY - (sideBtnSize/2);
-    
-    CCView* prevBtn = viewWithFrame(ccRect(prevX, sideBtnY, sideBtnSize, sideBtnSize));
-    prevBtn->backgroundColor = color(0.25, 0.25, 0.3, 1.0);
-    layerSetCornerRadius(prevBtn->layer, sideBtnSize / 2.0);
-    prevBtn->tag = TAG_MUSIC_PREV;
-
-    CCLabel* prevLbl = labelWithFrame(ccRect(0, 0, sideBtnSize, sideBtnSize));
-    prevLbl->text = ccs("|<");
-    prevLbl->textColor = color(0.8, 0.8, 0.9, 1.0);
-    prevLbl->fontSize = 14;
-    prevLbl->textAlignment = CCTextAlignmentCenter;
-    prevLbl->textVerticalAlignment = CCTextVerticalAlignmentCenter;
-    viewAddSubview(prevBtn, prevLbl);
-    viewAddSubview(mainWindowView, prevBtn);
-
-    // C. Next Button
-    int nextX = centerX + (playBtnSize/2) + spacing;
-    
-    CCView* nextBtn = viewWithFrame(ccRect(nextX, sideBtnY, sideBtnSize, sideBtnSize));
-    nextBtn->backgroundColor = color(0.25, 0.25, 0.3, 1.0);
-    layerSetCornerRadius(nextBtn->layer, sideBtnSize / 2.0);
-    nextBtn->tag = TAG_MUSIC_NEXT;
-
-    CCLabel* nextLbl = labelWithFrame(ccRect(0, 0, sideBtnSize, sideBtnSize));
-    nextLbl->text = ccs(">|");
-    nextLbl->textColor = color(0.8, 0.8, 0.9, 1.0);
-    nextLbl->fontSize = 14;
-    nextLbl->textAlignment = CCTextAlignmentCenter;
-    nextLbl->textVerticalAlignment = CCTextVerticalAlignmentCenter;
-    viewAddSubview(nextBtn, nextLbl);
-    viewAddSubview(mainWindowView, nextBtn);
-}
-
-// percentage is 0.0 to 1.0
-void update_music_progress(float percentage) {
-    if (uiMusicProgressFill == NULL) return;
-
-    // Clamp percentage safety check
-    if (percentage < 0.0f) percentage = 0.0f;
-    if (percentage > 1.0f) percentage = 1.0f;
-
-    int maxWidth = SCREEN_W - (MAIN_PADDING * 2);
-    int newWidth = (int)(maxWidth * percentage);
-
-    // Update the width of the fill view
-    uiMusicProgressFill->frame->size->width = newWidth;
-
-    // Optimized Redraw: Only redraw the progress track area via its parent
-    // Assuming the track is the parent, or just update the root if needed.
-    // If you implemented update_view_area_via_parent:
-    // update_view_area_via_parent(uiMusicProgressFill);
-    
-    // Fallback if parent optimization isn't ready:
-    update_full_ui();
-}
-
 
 void setup_gallery_ui(void); // Forward declaration
 
@@ -1611,11 +1419,11 @@ void openHomeMenuItem(int tag) {
         if (mainWindowView != NULL) {
             push_view(mainWindowView);
         }
-        setup_music_player_ui();
+        setup_music_app();
         update_full_ui();
         
         printf("Starting Playback...\n");
-        xTaskCreatePinnedToCore(mp3_task_wrapper, "mp3_task", 32768, NULL, 5, NULL, 0);
+        //xTaskCreatePinnedToCore(mp3_task_wrapper, "mp3_task", 32768, NULL, 5, NULL, 0);
         
     }
     else if (tag == 6) {

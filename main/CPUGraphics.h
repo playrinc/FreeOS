@@ -209,6 +209,11 @@ void drawGlyph(Framebuffer *framebuffer, FT_Bitmap *bitmap, int x, int y, ColorR
 
 // Image texture rendering functions
 void drawImageTexture(Framebuffer *framebuffer, const ImageTexture *texture, int x, int y, int width, int height);
+void drawImageTextureWithAlpha(Framebuffer *fb, const ImageTexture *texture,
+                               int x, int y, int width, int height, float alpha);
+void drawImageTextureWithAlphaClip(Framebuffer *fb, const ImageTexture *texture,
+                               int x, int y, int width, int height, float alpha,
+                               int clipX, int clipY, int clipW, int clipH);
 void drawImageTextureWithTransform(Framebuffer *framebuffer, const ImageTexture *texture, int x, int y, int width, int height, const Matrix3x3 *transform);
 void drawImageTextureRotate3DY(Framebuffer *framebuffer, const ImageTexture *texture, int x, int y, int width, int height, float angle);
 ImageTexture* resizeImageBilinear(const ImageTexture* input, int newWidth, int newHeight);
